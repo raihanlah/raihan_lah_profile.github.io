@@ -1,0 +1,116 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raihan Noor Fadhlurrahman</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('The Witcher Artwork.gif');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        .profi {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        .media-sosial {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .media-sosial a {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .media-sosial a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .media-sosial img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .date {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fff;
+            color: blue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profi">
+        <img src="foto1.jpg" alt="profil">
+        <h3>Raihan Noor Fadhlurrahman</h3>
+        <h3>1202220085</h3>
+        <h3>S1 Sistem Informasi</h3>
+
+        <div class="media-sosial">
+            <a href="https://www.instagram.com/raihan_lah_/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/raihanlah" target="_blank">
+                <img src="https://pngimg.com/uploads/github/github_PNG68.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/raihan-noor-fadhlurrahman-b48100282/" target="_blank">
+                <img src="https://logosmarken.com/wp-content/uploads/2020/04/Linkedin-Emblem.png" alt="LinkedIn">
+            </a>
+            <a href="https://x.com/Raihannfadh1?s=09" target="_blank">
+                <img src="xicon.png" alt="X">
+            </a>
+        </div>
+
+        <div class="datetime">
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    const formattedDateTime = now.toLocaleDateString() + ' ' + now.toLocaleTimeString();
+                    document.querySelector('.datetime').textContent = formattedDateTime;
+                }
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+        </div>
+    </div>
+</body>
+</html>
